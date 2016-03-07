@@ -68,35 +68,12 @@ class Animal
         echo 'testName2';
     }
 
-    function __call($name, $arguments)
+
+    public function __invoke( $param1 , $param2 )
     {
-        echo "<b>function name:</b>";
-        echo $name . '<br>';
+        print_r( array( $param1 , $param2 ) );
 
-        echo "<b>function arguments:</b>";
-        print_r( $arguments );
-    }
-
-
-
-    public static function helloCall($name,$age){
-        var_dump($name,$age);
-    }
-
-    public static function __callStatic($name, $arguments)
-    {
-        echo "<b>function name2:</b>";
-        echo $name . '<br>';
-
-        echo "<b>function arguments2:</b>";
-        print_r( $arguments );
-
-        if ($name == 'hello'){
-            var_dump('----3333333333----');
-            //call_user_func(function($arr){ var_dump($arr);},[123,456]);
-
-            //call_user_func($this->helloCall(),[123,456]);
-        }
+        echo '<br>  this is invoke magic function';
     }
 
 

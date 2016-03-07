@@ -11,4 +11,8 @@ namespace test;
 class Person extends Animal
 {
 
+    public static function testStatic($args){
+        var_dump('testStatic--sucessful',$args);
+    }
+
 }
