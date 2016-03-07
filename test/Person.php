@@ -6,8 +6,7 @@
  * Time: 下午1:11
  */
 
-namespace hlt\test;
-
+namespace test;
 
 class Person extends Animal
 {

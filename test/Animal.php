@@ -6,8 +6,7 @@
  * Time: 下午1:09
  */
 
-namespace hlt\test;
-
+namespace test;
 
 class Animal
 {
